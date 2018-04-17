@@ -1,0 +1,9 @@
+install: make get-deps
+
+language: c
+script: scons
+compiler:
+  - clang
+  - gcc
+before_install:
+  - test -n $CC && unset CC
