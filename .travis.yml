@@ -2,6 +2,5 @@ sudo: required
 
 language: c
 compiler: gcc
-install: make get-deps
-script: make get-deps
-make && maketest
+script: make test
+install: make dep
